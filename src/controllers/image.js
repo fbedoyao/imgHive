@@ -42,7 +42,7 @@ ctrl.create = (req, res) => {
             const ext = path.extname(req.file.originalname).toLowerCase();
             const targetPath = path.resolve(`src/public/upload/${imgUrl}${ext}`);
         
-            if(ext === '.png' || ext === '.jpg' || ext === '.jpeg' || ext === '.gif'){
+            if(ext === '.png' || ext === '.jpg' || ext === '.jpeg' || ext === '.webp'){
                 await fs.rename(imageTempPath, targetPath) //rename function changes the path of a file ("moves" a file)
                 const newImg = new Image({
                     title: req.body.title,

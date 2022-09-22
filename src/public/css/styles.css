@@ -1,7 +1,22 @@
 .navbar-brand img {
-    width: 60%;
+    width: 70%;
 }
 
 body {
     background: #dcdde1;
 }
+
+.btnContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#navbar a {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+
+}
+
+
+
